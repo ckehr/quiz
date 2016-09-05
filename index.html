@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Mr. Robot Quiz</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="application.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+		<h1>Mr. Robot Quiz</h1>
+		<div id="question_wrapper">
+			<span class="question">Question #1: What is the first thing Elliot says in the first episode</span><br>
+			<div id="answer_holder">
+				<input type="radio" name="option" class="option" value="0"><span class="answer">Hack the Planet</span><br>
+				<input type="radio" name="option" class="option" value="1"><span class="answer">Good Morning</span><br>
+				<input type="radio" name="option" class="option" value="2"><span class="answer">I am Mr. Robot</span><br>
+				<input type="radio" name="option" class="option" value="3"><span class="answer">Hello Friend</span><br>
+			</div>
+			<div id="button_holder">
+				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
+				<input type="button" id="retry_button" value="Try Again!">
+			</div>
+
+		</div>
+		<audio autoplay id="song" src="song.mp3"></audio>
+	</body>
+	<div id="bottom">
+		<div id="score_holder">
+			<div id="question_score">
+				<img src="ECorp.png" class ="score_fsociety" id="score_fsociety0" alt="score_fsociety">
+				<img src="fsociety1.png" class ="score_fsociety" id="score_fsociety1" alt="score_fsociety">
+				<img src="fsociety2.png" class ="score_fsociety" id="score_fsociety2" alt="score_fsociety"">
+				<img src="fsociety3.png" class ="score_fsociety" id="score_fsociety3" alt="score_fsociety">
+				<img src="fsociety4.png" class ="score_fsociety" id="score_fsociety4" alt="score_fsociety">
+				<img src="fsociety5.png" class ="score_fsociety" id="score_fsociety5" alt="score_fsociety">
+			</div>
+			<div id="fact_holder">
+				<span id="last_question_fact">
+				</span>
+			</div>
+		</div>
+	</div>
+</html>
